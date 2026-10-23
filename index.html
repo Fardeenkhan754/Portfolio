@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fardeen Khan.</title>
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </head>
+  <body class="font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <a href="#" class="text-2xl font-bold text-gray-800"
+            >Fardeen<span class="text-[#007ba7]">.</span></a
+          >
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#home"
+              class="nav-link text-gray-600 hover:text-[#007ba7] transition"
+              >Home</a
+            >
+            <a
+              href="#skills"
+              class="nav-link text-gray-600 hover:text-[#007ba7] transition"
+              >My Skills</a
+            >
+            <a
+              href="#projects"
+              class="nav-link text-gray-600 hover:text-[#007ba7] transition"
+              >Projects</a
+            >
+            <a
+              href="#testimonials"
+              class="nav-link text-gray-600 hover:text-[#007ba7] transition"
+              >Testimonials</a
+            >
+            <a
+              href="#contact"
+              class="nav-link text-gray-600 hover:text-[#007ba7] transition"
+              >Let's Contact</a
+            >
+          </div>
+          <button class="md:hidden focus:outline-none" id="menu-btn">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden mt-4" id="mobile-menu">
+          <a
+            href="#home"
+            class="block py-2 text-gray-600 hover:text-[#007ba7] transition"
+            >Home</a
+          >
+          <a
+            href="#skills"
+            class="block py-2 text-gray-600 hover:text-[#007ba7] transition"
+            >My Skills</a
+          >
+          <a
+            href="#projects"
+            class="block py-2 text-gray-600 hover:text-[#007ba7] transition"
+            >Projects</a
+          >
+          <a
+            href="#testimonials"
+            class="block py-2 text-gray-600 hover:text-[#007ba7] transition"
+            >Testimonials</a
+          >
+          <a
+            href="#contact"
+            class="block py-2 text-gray-600 hover:text-[#007ba7] transition"
+            >Let's Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center md:justify-center pt-10"
+    >
+      <div class="container mx-auto px-6 py-10 md:mx-2 md:px-2">
+        <div
+          class="flex flex-col-reverse md:flex-row items-center justify-center md:gap-30"
+        >
+          <div
+            class="md:w-1/2 my-10 md:mb-0 sm:mx-20 md:mx-0"
+            data-aos="fade-right"
+          >
+            <h1
+              class="text-3xl text-center md:text-3xl md:text-start font-bold text-gray-800 mb-4 lg:text-5xl"
+            >
+              Hi I'm
+              <span class="text-[#007ba7]">Fardeen Khan</span>
+            </h1>
+            <h2
+              class="text-2xl text-center md:text-2xl md:text-start font-semibold text-gray-600 mb-6 lg:text-3xl"
+            >
+              <span id="typed" class="text-[#007ba7]"></span>
+            </h2>
+            <p
+              class="text-gray-600 mb-8 max-w-lg text-center text-sm md:text-start md:text-xs lg:text-lg"
+            >
+              With expertise in HTML, CSS, and JavaScript. I love turning ideas
+              into responsive, user-friendly, and visually appealing websites.
+              With strong problem-solving skills and attention to detail, I aim
+              to create digital experiences that are both functional and
+              creative.
+            </p>
+            <div class="flex space-x-4 justify-evenly md:justify-start">
+              <a
+                href="#projects"
+                class="px-6 py-3 bg-[#007ba7] text-white text-sm rounded-lg hover:bg-[#007ba7] transition md:whitespace-nowrap"
+                >View My Work</a
+              >
+              <a
+                href="My New Resume.pdf"
+                class="px-6 py-3 border-2 border-[#007ba7] text-sm text-[#007ba7] rounded-lg hover:bg-blue-50 transition md:whitespace-nowrap"
+                download=""
+                >Download CV</a
+              >
+            </div>
+          </div>
+          <div class="h-96 overflow-hidden rounded-lg" data-aos="fade-left">
+            <img
+              src="./src/assets/profile.jpg"
+              alt="Web Developer"
+              class="w-full max-w-md mx-auto md:w-[75%] shadow-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            My <span class="text-[#007ba7]">Skills</span>
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            I've mastered these technologies to create amazing digital
+            experiences.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div
+            class="skill-card bg-white p-8 rounded-lg shadow-md transition duration-300 h-auto"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="w-[20%] my-3">
+              <img src="./src/assets/html5 (1).png" class="w-full" alt="" />
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-700">HTML5</h3>
+            <p class="text-gray-700">
+              Building structured and semantic web pages.
+            </p>
+          </div>
+
+          <div
+            class="skill-card bg-white p-8 rounded-lg shadow-md transition duration-300 h-auto"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="w-[20%] my-3">
+              <img src="./src/assets/css.svg" class="w-full" alt="" />
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-700">CSS</h3>
+            <p class="text-gray-700">
+              Creating responsive and visually appealing designs.
+            </p>
+          </div>
+
+          <div
+            class="skill-card bg-white p-8 rounded-lg shadow-md transition duration-300 h-auto"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="w-[20%] my-3">
+              <img src="./src/assets/tailwind-css.svg" class="w-full" alt="" />
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-700">TAILWIND CSS</h3>
+            <p class="text-gray-700">
+              Designing modern UIs with utility-first CSS.
+            </p>
+          </div>
+
+          <div
+            class="skill-card bg-white p-8 rounded-lg shadow-md transition duration-300 h-auto"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="w-[20%] my-3">
+              <img src="./src/assets/javascript.svg" class="w-full" alt="" />
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-700">JAVASCRIPT</h3>
+            <p class="text-gray-700">
+              Adding interactive features and dynamic functionality.
+            </p>
+          </div>
+
+          <div
+            class="skill-card bg-white p-8 rounded-lg shadow-md transition duration-300 h-auto"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="w-[20%] my-3">
+              <img src="./src/assets/python.svg" class="w-full" alt="" />
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-700">PYTHON</h3>
+            <p class="text-gray-700">
+              Writing clean code and solving programming problems.
+            </p>
+          </div>
+
+          <div
+            class="skill-card bg-white p-8 rounded-lg shadow-md transition duration-300 h-auto"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="w-[20%] my-3">
+              <img src="./src/assets/django.svg" class="w-full" alt="" />
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-700">DJANGO</h3>
+            <p class="text-gray-700">
+              Building secure and dynamic web applications.
+            </p>
+          </div>
+
+          <div
+            class="skill-card bg-white p-8 rounded-lg shadow-md transition duration-300 h-auto"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="w-[20%] my-3">
+              <img src="./src/assets/sql.svg" class="w-full" alt="" />
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-700">SQL</h3>
+            <p class="text-gray-700">
+              Managing databases and retrieving data efficiently.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section 
+     Note: Image Size Should be 640x360-->
+    <section id="projects" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            My <span class="text-[#007ba7]">Projects</span>
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Here are some of my recent works that showcase my skills and
+            creativity.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="project-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              src="./src/assets/Project-1.png"
+              alt="Project 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Porfolio Website
+              </h3>
+              <p class="text-gray-600 mb-4">
+                My personal protfolio, HTML, CSS and JavaScript Project
+              </p>
+              <a
+                href="#home"
+                class="text-gray-600 font-medium hover:text-[#007ba7]"
+                >View Project →</a
+              >
+            </div>
+          </div>
+
+          <div class="text-center mt-12" data-aos="fade-up">
+            <!-- <a
+              href="#"
+              class="px-6 py-3 border-2 border-[#007ba7] text-[#007ba7] rounded-lg hover:bg-blue-50 transition"
+              >View All Projects</a
+            > -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            Client <span class="text-[#007ba7]">Testimonials</span>
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            What people say about working with me.
+          </p>
+        </div>
+        <div class="">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-col-3 lg:grid-cols-3 gap-8"
+          >
+            <div
+              class="testimonial-card bg-white p-8 rounded-lg shadow-md transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                  <img
+                    src="http://static.photos/people/200x200/1"
+                    alt="Client"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800">Sarah Johnson</h4>
+                  <p class="text-gray-600 text-sm">CEO, TechSolutions</p>
+                </div>
+              </div>
+              <p class="text-gray-600 italic">
+                "Fardeen transformed our outdated website into a modern,
+                user-friendly platform that increased our conversions by 40%.
+                His attention to detail and communication were exceptional."
+              </p>
+            </div>
+
+            <div
+              class="testimonial-card bg-white p-8 rounded-lg shadow-md transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                  <img
+                    src="http://static.photos/people/200x200/2"
+                    alt="Client"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800">Michael Chen</h4>
+                  <p class="text-gray-600 text-sm">Marketing Director</p>
+                </div>
+              </div>
+              <p class="text-gray-600 italic">
+                "Working with Fardeen was a pleasure. He delivered our project
+                ahead of schedule and implemented features we hadn't even
+                considered but turned out to be game-changers."
+              </p>
+            </div>
+
+            <div
+              class="testimonial-card bg-white p-8 rounded-lg shadow-md transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                  <img
+                    src="http://static.photos/people/200x200/3"
+                    alt="Client"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800">Emily Rodriguez</h4>
+                  <p class="text-gray-600 text-sm">Founder, CreativeMinds</p>
+                </div>
+              </div>
+              <p class="text-gray-600 italic">
+                "Fardeen's design sensibility and technical skills are
+                top-notch. He created a portfolio website that perfectly
+                represents my brand and has attracted several new clients."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            Let's <span class="text-[#007ba7]">Connect</span>
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Have a project in mind or want to discuss potential opportunities?
+            Get in touch!
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10" data-aos="fade-right">
+            <h3 class="text-xl font-bold text-gray-800 mb-6">
+              Contact Information
+            </h3>
+            <div class="space-y-6">
+              <div class="flex items-center">
+                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                  <i data-feather="mail" class="text-[#007ba7] w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-gray-600">Email</p>
+                  <p class="font-medium text-gray-800">fk6668910@mail.com</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                  <i data-feather="phone" class="text-[#007ba7] w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-gray-600">Phone</p>
+                  <p class="font-medium text-gray-800">(+92) 330 6151845</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                  <i data-feather="map-pin" class="text-[#007ba7] w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-gray-600">Location</p>
+                  <p class="font-medium text-gray-800">Sukkur, Pakistan</p>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mt-10 mb-6">
+              Follow Me
+            </h3>
+            <div class="flex space-x-4">
+              <a
+                href="https://github.com/Fardeenkhan754"
+                target="_black"
+                class="bg-gray-100 text-gray-700 p-3 rounded-full hover:bg-[#007ba7] transition hover:text-white"
+              >
+                <i data-feather="github" class="w-5 h-5"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/fardeen.khan.979521"
+                target="_black"
+                class="bg-gray-100 text-gray-700 p-3 rounded-full hover:bg-[#007ba7] transition hover:text-white"
+              >
+                <i data-feather="facebook" class="w-5 h-5"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-gray-100 text-gray-700 p-3 rounded-full hover:bg-[#007ba7] transition hover:text-white"
+              >
+                <i data-feather="linkedin" class="w-5 h-5"></i>
+              </a>
+              <!-- <a
+                href="#"
+                class="bg-gray-100 p-3 rounded-full hover:bg-blue-100 transition"
+              >
+                <i data-feather="freelancer" class="text-gray-700 w-5 h-5"></i>
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-6 md:mb-0">
+            <a href="#" class="text-2xl font-bold"
+              >Fardeen<span class="text-[#007ba7]">.</span></a
+            >
+            <p class="text-gray-400 mt-2">
+              Creating digital experiences that matter.
+            </p>
+          </div>
+          <div class="flex space-x-6">
+            <a href="#home" class="text-gray-400 hover:text-white transition"
+              >Home</a
+            >
+            <a href="#skills" class="text-gray-400 hover:text-white transition"
+              >Skills</a
+            >
+            <a
+              href="#projects"
+              class="text-gray-400 hover:text-white transition"
+              >Projects</a
+            >
+            <a href="#contact" class="text-gray-400 hover:text-white transition"
+              >Contact</a
+            >
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>© 2023 Fardeen Khan. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./src/app.js"></script>
+    <script src="./src/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  </body>
+</html>
